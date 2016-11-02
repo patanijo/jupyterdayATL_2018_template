@@ -1,0 +1,16 @@
+Analysis Environment
+====================
+python 2.7.12
+pandas 0.18.1
+
+
+Data
+=====
+
+Data for this study was downloaded from the US EIA Electricity Data Browswer on 2016-NOV-02.
+
+The specific download link is
+http://www.eia.gov/electricity/data/browser/#/topic/0?agg=1,0,2&fuel=g&geo=vvvvvvvvvvvvo&sec=038&linechart=~~~~&freq=M&start=200101&end=201608&ctype=linechart&ltype=pin&rtype=s&pin=&rse=0&maptype=0
+
+This contains the Net Electrical Generation by Sector on a monthly basis from Jan-2001 to August-2016
+
