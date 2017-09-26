@@ -1,5 +1,14 @@
-# sample_offline_analytic
-A Sample Analytic Developed for Offline Purposes for demonstrating the git workflow
+# Sample Offline Analytic
 
-This document doesn't have any content or any data, but is used for example purposes only.
+## Project Description
+
+Enter a one paragraph description of the project.
+
+For example:
+
+A Sample Analytic Developed for Offline Purposes for demonstrating the git workflow. The sample project contains the directory structure needed for the project, but not any real content.
+
+Address the following questions:
+1. Developer Name(s)
+2. Developer Contact information
 
