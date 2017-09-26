@@ -1,11 +1,17 @@
 Analysis Environment
 ====================
+
+For python, the easiest way to capture this is via exporting a conda environment using conda env export. Otherwise, list the dependencies and the versions of the libraries you used for the analysis. If you used a virtual environment, add that to version control and put the command for how to create the virtual environment here. 
+
 python 2.7.12
 pandas 0.18.1
 
 
+
 Data
 =====
+
+If your data is not downloaded via code, then describe how to get the data here.
 
 Data for this study was downloaded from the US EIA Electricity Data Browswer on 2016-NOV-02.
 
