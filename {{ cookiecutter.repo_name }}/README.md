@@ -11,25 +11,22 @@ Project Organization
     │
     ├── figures/            <- Figures saved by scripts or notebooks.
     │
-    ├── notebooks/          <- Jupyter notebooks. Naming convention is a short `-` delimited 
-    │                         description, a number (for ordering), and the creator's initials,
-    │                        e.g. `initial-data-exploration-01-hg`.
+    ├── deliver/            <- Final deliverable Jupyter notebooks. Naming convention is a short `-` delimited 
+    │                          number for ordering, Project Description, Process description, and the creator's initials,
+    │                          e.g. `01_CoalAnalysis_DataCleaning`.
     │
-    ├── output/             <- Manipulated data, logs, etc.
+    ├── dev/                <- Scratch notebook space, useful for experiments.
     │
-    ├── tests/              <- Unit tests.
+    ├── models/             <- Serialized or pickled machine learning models
     │
-    ├── {{ cookiecutter.python_module_name }}/      <- Python module with source code of this project.
+    ├── src/                <- Python module with source code of this project.
     │
     ├── environment.yml     <- conda virtual environment definition file.
     │
     ├── LICENSE
     │
-    ├── Makefile            <- Makefile with commands like `make environment`
-    │
     ├── README.md           <- The top-level README for developers using this project.
     │
-    └── tox.ini             <- tox file with settings for running tox; see tox.testrun.org
 
 
 --------
@@ -44,9 +41,5 @@ Install the virtual environment with conda and activate it:
 
 ```bash
 $ conda env create -f environment.yml
-$ source activate example-project
-```
-
-Install `{{ cookiecutter.python_module_name }}` in the virtual environment:
-
+$ activate example-project
 ```
