@@ -1,45 +1,52 @@
-# Sample Offline Analytic
+{{cookiecutter.project_name}}
+==============================
 
-## Business background and Project Description
+{{cookiecutter.description}}
 
-Enter a one paragraph description of the project.
-For example:
-A Sample Analytic Developed for Offline Purposes for demonstrating the git workflow. The sample project contains the directory structure needed for the project, but not any real content.
+Project Organization
+------------
 
-* Who is the customer
-* What business problems or techncial issues are we trying to address?
-
-## Personnel
-* Who are on this project:
-    * Project lead
-    * Data Scientist(s)
-    * Product Service Engineer(s)
-    * Customer Representatives
-
-## Metrics
-* What are the qualitative objectives? (e.g. Detect gas turbine bearing rubs during shutdown.)
-* What is a quantifiable metric  (Detect bearing rubs during shutdown with a POD of 90% and a FPR of < 1%)
-* Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the number of alarms of analytic X by 25%)
-* What is the baseline (current) value of the metric?
-* How will we measure the metric? 
-
-## Plan
-* Phases (milestones), timeline, short description of what we'll do in each phase.
-
-## Architecture
-* Data
-  * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL databases, Historian, etc)
-* Data movement from on-prem to to cloud 
-  * all the data, 
-  * after some pre-aggregation on-prem,
-  * Sampled data enough for modeling
-* What tools and data storage/analytics resources will be used in the solution e.g.,
-  * Hive/R/Python for feature construction, aggregation and sampling
-  * i.e. Orchestration Manager for operationalizing, Tableau for dashboard visualization
-  * How will the end customer use the model results to make decisions
-
-## Communication
-* How will we keep in touch? Weekly meetings?
-* Who are the contact persons? 
+    │
+    ├── data/               <- The original, immutable data dump. 
+    │
+    ├── figures/            <- Figures saved by scripts or notebooks.
+    │
+    ├── notebooks/          <- Jupyter notebooks. Naming convention is a short `-` delimited 
+    │                         description, a number (for ordering), and the creator's initials,
+    │                        e.g. `initial-data-exploration-01-hg`.
+    │
+    ├── output/             <- Manipulated data, logs, etc.
+    │
+    ├── tests/              <- Unit tests.
+    │
+    ├── {{ cookiecutter.python_module_name }}/      <- Python module with source code of this project.
+    │
+    ├── environment.yml     <- conda virtual environment definition file.
+    │
+    ├── LICENSE
+    │
+    ├── Makefile            <- Makefile with commands like `make environment`
+    │
+    ├── README.md           <- The top-level README for developers using this project.
+    │
+    └── tox.ini             <- tox file with settings for running tox; see tox.testrun.org
 
 
+--------
+
+<p><small>Project based on the <a target="_blank" href="https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template">cookiecutter data science project template</a>.</p>
+
+
+Set up
+------------
+
+Install the virtual environment with conda and activate it:
+
+```bash
+$ conda env create -f environment.yml
+$ source activate example-project
+```
+
+Install `{{ cookiecutter.python_module_name }}` in the virtual environment:
+
+```
