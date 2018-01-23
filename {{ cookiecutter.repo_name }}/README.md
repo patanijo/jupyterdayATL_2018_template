@@ -40,6 +40,14 @@ Set up
 Install the virtual environment with conda and activate it:
 
 ```bash
+$ git ini
 $ conda env create -f environment.yml
 $ activate example-project
+```
+
+Create a repository on GitHub Enterprise first and then initialize and configure a github repo 
+```bash
+$ git init
+$ git remote add origin https://github.build.ge.com/{{cookiecutter.SSO}}/{{cookiecutter.repo_name}}
+
 ```
