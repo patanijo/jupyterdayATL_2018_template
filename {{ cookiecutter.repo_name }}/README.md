@@ -49,5 +49,8 @@ Create a repository on GitHub Enterprise first and then initialize and configure
 ```bash
 $ git init
 $ git remote add origin https://github.build.ge.com/{{cookiecutter.SSO}}/{{cookiecutter.repo_name}}
-
+$ cd <analytic directory>
+$ git add .
+$ git commit -m "Initial creation from template
+$ git push -u origin master
 ```
