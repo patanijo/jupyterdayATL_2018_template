@@ -5,5 +5,5 @@
     "description": "A short description of the project.",
     "open_source_license": ["MIT", "BSD", "Not open source"],
     "conda_environment": "{{ cookiecutter.repo_name }}",
-    "python_interpreter": ["python", "python3"]
+    "python_version": ["python", "python3"]
 }
