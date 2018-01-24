@@ -8,11 +8,13 @@ Project Organization
 ------------
 
     │
-    ├── data/               <- The original, immutable data dump. 
+    ├── data/               <- Directory of data files
+    │   |-- raw/            <- The original immutable data dump.
+    │   |-- processed/      <-  cleaned data sets and modelling ready data sets.  
     │
     ├── figures/            <- Figures saved by scripts or notebooks.
     │
-    ├── deliver/            <- Final deliverable Jupyter notebooks. Naming convention is a short `-` delimited 
+    ├── deliver/            <- Final deliverable analytic artifacts. Naming convention is a short `-` delimited 
     │                          number for ordering, Project Description, Process description, and the creator's initials,
     │                          e.g. `01_CoalAnalysis_DataCleaning`.
     │
