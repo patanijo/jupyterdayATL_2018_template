@@ -40,8 +40,13 @@ Set up
 
 Install the virtual environment with conda and activate it:
 
+On Windows
 ```bash
-$ git ini
 $ conda env create -f environment.yml
 $ activate {{cookiecutter.conda_environment}}
+```
+On OSx/Linux
+```bash
+$ conda env create -f environment.yml
+$ source activate {{cookiecutter.conda_environment}}
 ```
