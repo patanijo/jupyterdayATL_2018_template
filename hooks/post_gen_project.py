@@ -8,7 +8,7 @@ org_repo = 'https://github.build.ge.com/FleetServicesOfflineAnalytics/{{ cookiec
 print('Initializing local git repository')
 subprocess.call(['git', 'init'])
 subprocess.call(['git', 'add', '.'])
-subprocess.call(['git', 'commit', '-m', 'Initial Automated commit'])
+subprocess.call(['git', 'commit', '-m', 'Initial Automated commit of {{cookiecutter.project_name}}'])
 
 print('Configuring git remote named origin under your SSO')
 subprocess.call(['git', 'remote', 'add', 'origin', user_repo])
