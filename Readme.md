@@ -44,4 +44,8 @@ Usage
     `conda install -c http://vdcalp02268.ics.cloud.ge.com:8080/conda/patanijo cookiecutter=1.6.0`  
 2. Create an offline analytic Using this template:
 
-    `cookiecutter https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template` 
+    `cookiecutter https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template`
+
+        a. You'll be prompted to enter values.
+        b. Then it'll create your offline analytic in the current working directory based on those values.
+        
