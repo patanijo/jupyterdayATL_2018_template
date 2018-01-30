@@ -14,5 +14,7 @@ print('Configuring git remote named origin under your SSO')
 subprocess.call(['git', 'remote', 'add', 'origin', user_repo])
 print('Adding git remote named upstream under the FleetManagement Offline repository')
 subprocess.call(['git', 'remote', 'add', 'upstream', org_repo])
+print('Changing into Project Directory')
+subprocess.call(['cd', {{ cookiecutter.repo_name }}])
 
 
