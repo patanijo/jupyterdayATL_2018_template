@@ -36,6 +36,19 @@ Project Organization
 
 <p><small>Project based on the <a target="_blank" href="https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template">cookiecutter data science project template</a>.</p>
 
+Usage
+------------
+1. Install cookiecutter package
+    If using public Anaconda repository
+    
+    `conda install -c conda-forge cookiecutter `
+    
+    If using GE Internal Anaconda repository
+    
+    `conda install -c http://vdcalp02268.ics.cloud.ge.com:8080/conda/patanijo cookiecutter=1.6.0`  
+2. Create an offline analytic Using this template:
+
+    `cookiecutter https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template` 
 
 Set up
 ------------
