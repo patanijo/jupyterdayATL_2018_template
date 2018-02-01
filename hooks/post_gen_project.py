@@ -27,7 +27,7 @@ if __name__ == "__main__":
     print('Configuring git remote named origin under your SSO')
     print()
     configure_git_remotes()
-    {% if cookiecutter.create_conda_environment %}
+    {% if cookiecutter.create_conda_environment == true %}
     print('Creating a local conda environment named {{cookiecutter.conda_environment}}')
     create_conda_environment()
     print('Conda environment creation complete')
