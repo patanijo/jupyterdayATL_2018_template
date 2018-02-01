@@ -17,7 +17,7 @@ def configure_git_remotes():
 
 def create_conda_environment():
     # conda env create -f environment.yml
-    subprocess.call(['conda', 'env', 'create', '-f', 'environment.yaml'], '-y')
+    subprocess.call(['conda', 'env', 'create', '-f', 'environment.yaml', '-y'])
 
 if __name__ == "__main__":
     print('Initializing local git repository')
