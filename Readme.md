@@ -1,8 +1,4 @@
-{{cookiecutter.project_name}}
-==============================
-
-{{cookiecutter.description}}
-{{cookiecutter.author_name}}
+Creates a template Offline Analytic with the following directory structure
 
 Project Organization
 ------------
@@ -36,18 +32,20 @@ Project Organization
 
 <p><small>Project based on the <a target="_blank" href="https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template">cookiecutter data science project template</a>.</p>
 
-Set up
+Usage
 ------------
+1. Install cookiecutter package
+    If using public Anaconda repository
+    
+    `conda install -c conda-forge cookiecutter `
+    
+    If using GE Internal Anaconda repository
+    
+    `conda install -c http://vdcalp02268.ics.cloud.ge.com:8080/conda/patanijo cookiecutter=1.6.0`  
+2. Create an offline analytic Using this template:
 
-Install the virtual environment with conda and activate it:
+    `cookiecutter https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template`
 
-On Windows
-```bash
-$ conda env create -f environment.yml
-$ activate {{cookiecutter.conda_environment}}
-```
-On OSx/Linux
-```bash
-$ conda env create -f environment.yml
-$ source activate {{cookiecutter.conda_environment}}
-```
+        a. You'll be prompted to enter values.
+        b. Then it'll create your offline analytic in the current working directory based on those values.
+        
