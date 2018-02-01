@@ -30,5 +30,5 @@ if __name__ == "__main__":
     {% if cookiecutter.create_conda_environment %}
     print('Creating a local conda environment named {{cookiecutter.conda_environment}}')
     create_conda_environment()
-    print'(Conda environment creation complete')
+    print('Conda environment creation complete')
     {% endif %}
