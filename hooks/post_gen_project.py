@@ -11,8 +11,9 @@ def create_git_repo():
     subprocess.call(['git', 'commit', '-m', 'Initial Automated commit of {{cookiecutter.project_name}}'])
 
 def configure_git_remotes():
+    print('Adding git remote named upstream under the {{ cookiecutter.SSO }} user')    
     subprocess.call(['git', 'remote', 'add', 'origin', user_repo])
-    print('Adding git remote named upstream under the FleetManagement Offline repository')
+    print('Adding git remote named upstream under the FleetManagement Offline Organization')
     subprocess.call(['git', 'remote', 'add', 'upstream', org_repo])
 
 def create_conda_environment():
@@ -25,9 +26,9 @@ if __name__ == "__main__":
 
     print('Configuring git remote named origin under your SSO')
     print()
-    print('Adding git remote named upstream under the FleetManagement Offline repository')    
     configure_git_remotes()
     {% if cookiecutter.create_conda_environment %}
+    print('Creating a local conda environment named {{cookiecutter.conda_environment}}')
     create_conda_environment()
+    print'(Conda environment creation complete')
     {% endif %}
-    
