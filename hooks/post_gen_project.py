@@ -27,7 +27,7 @@ if __name__ == "__main__":
     print()
     print('Adding git remote named upstream under the FleetManagement Offline repository')    
     configure_git_remotes():
-    {% if users %}
+    {% if cookiecutter.create_conda_environment %}
     create_conda_environment()
     {% endif %}
     
