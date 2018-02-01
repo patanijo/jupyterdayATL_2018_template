@@ -15,7 +15,7 @@ def configure_git_remotes():
     print('Adding git remote named upstream under the FleetManagement Offline repository')
     subprocess.call(['git', 'remote', 'add', 'upstream', org_repo])
 
-def create conda_environment():
+def create_conda_environment():
     # conda env create -f environment.yml
     subprocess.call(['conda', 'env', 'create', '-f', 'environment.yaml'], '-y')
 
