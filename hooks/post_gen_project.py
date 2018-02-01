@@ -26,7 +26,7 @@ if __name__ == "__main__":
     print('Configuring git remote named origin under your SSO')
     print()
     print('Adding git remote named upstream under the FleetManagement Offline repository')    
-    configure_git_remotes():
+    configure_git_remotes()
     {% if cookiecutter.create_conda_environment %}
     create_conda_environment()
     {% endif %}
