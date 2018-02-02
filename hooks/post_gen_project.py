@@ -15,6 +15,7 @@ def configure_git_remotes():
     subprocess.call(['git', 'remote', 'add', 'origin', user_repo])
     print('Adding git remote named upstream under the FleetManagement Offline Organization')
     subprocess.call(['git', 'remote', 'add', 'upstream', org_repo])
+    print('/n Verify these remotes exist before pushing from your local repository /n')
 
 def create_conda_environment():
     # conda env create -f environment.yml
