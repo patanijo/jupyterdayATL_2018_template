@@ -42,6 +42,11 @@ Usage
     If using GE Internal Anaconda repository
     
     `conda install -c http://vdcalp02268.ics.cloud.ge.com:8080/conda/patanijo cookiecutter=1.6.0`  
+    
+    If using pip
+    
+   `pip install --user cookiecutter --proxy <http://your_proxy_address>`
+   
 2. Create an offline analytic Using this template:
 
     `cookiecutter https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template`
