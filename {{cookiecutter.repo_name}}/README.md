@@ -1,8 +1,9 @@
 {{cookiecutter.project_name}}
 ==============================
 
-{{cookiecutter.description}}
-{{cookiecutter.author_name}}
+Project Description: {{cookiecutter.description}}
+
+Author: {{cookiecutter.author_name}}
 
 Project Organization
 ------------
@@ -39,7 +40,7 @@ Project Organization
 Set up
 ------------
 
-Install the virtual environment with conda and activate it:
+Install the virtual environment with conda using the included environment.yml file and activate it:
 
 On Windows
 ```bash
@@ -51,3 +52,8 @@ On OSx/Linux
 $ conda env create -f environment.yml
 $ source activate {{cookiecutter.conda_environment}}
 ```
+
+How to Execute This Project
+-----------
+
+Include an example or two of how to run various cleaning or analysis tasks. This is often the first thing users and collaborators on your project will look at, so make it explicit. 
