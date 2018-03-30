@@ -3,7 +3,7 @@
 import subprocess
 
 user_repo = 'https://github.com/{{ cookiecutter.github_user_name}}/{{ cookiecutter.repo_name }}'
-org_repo = 'https://github.com/jupyterdayATL/FleetServicesOfflineAnalytics/{{ cookiecutter.repo_name }}'
+org_repo = 'https://github.com/jupyterdayATL/{{ cookiecutter.repo_name }}'
 
 def create_git_repo():
     subprocess.call(['git', 'init'])
