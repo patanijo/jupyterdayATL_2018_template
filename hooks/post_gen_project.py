@@ -2,8 +2,8 @@
 
 import subprocess
 
-user_repo = 'https://github.build.ge.com/{{ cookiecutter.SSO }}/{{ cookiecutter.repo_name }}'
-org_repo = 'https://github.build.ge.com/FleetServicesOfflineAnalytics/{{ cookiecutter.repo_name }}'
+user_repo = 'https://github.com/{{ cookiecutter.SSO }}/{{ cookiecutter.repo_name }}'
+org_repo = 'https://github.com/jupyterdayATL/FleetServicesOfflineAnalytics/{{ cookiecutter.repo_name }}'
 
 def create_git_repo():
     subprocess.call(['git', 'init'])
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     print('Initializing local git repository')
     create_git_repo()
 
-    print('Configuring git remote named origin under your SSO')
+    print('Configuring git remote named origin under your github user name')
     print()
     configure_git_remotes()
     {% if cookiecutter.create_conda_environment == "YES" %}
