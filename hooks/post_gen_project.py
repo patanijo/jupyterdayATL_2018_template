@@ -28,8 +28,3 @@ if __name__ == "__main__":
     print('Configuring git remote named origin under your github user name')
     print()
     configure_git_remotes()
-    {% if cookiecutter.create_conda_environment == "YES" %}
-    print('Creating a local conda environment named {{cookiecutter.conda_environment}}')
-    create_conda_environment()
-    print('Conda environment creation complete')
-    {% endif %}
