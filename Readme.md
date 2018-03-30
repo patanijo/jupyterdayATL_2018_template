@@ -39,18 +39,14 @@ Usage
     
     `conda install -c conda-forge cookiecutter `
     
-    If using GE Internal Anaconda repository
-    
-    `conda install -c http://vdcalp02268.ics.cloud.ge.com:8080/conda/patanijo cookiecutter=1.6.0`  
-    
     If using pip
     
    `pip install --user cookiecutter --proxy <http://your_proxy_address>`
    
 2. Create an offline analytic Using this template:
 
-    `cookiecutter https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template`
+    `cookiecutter https://github.com/patanijo/jupyterdayATL_2018_template`
 
-        a. You'll be prompted to enter values.
-        b. Then it'll create your offline analytic in the current working directory based on those values.
+        a. You'll be prompted to enter values for a series of question.
+        b. Then it'll create your data science project in the current working directory based on those values.
         
