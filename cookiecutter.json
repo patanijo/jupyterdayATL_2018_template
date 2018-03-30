@@ -5,7 +5,7 @@
     "author_email": "",
     "github_user_name": "Your Single Sign-On", 
     "description": "A short description of the project.",
-    "open_source_license": ['Apache', 'MIT', 'BSD-3', 'BSD-2', 'GPL', 'Not open source"],
+    "open_source_license": ["Apache", "MIT", "BSD-3", "BSD-2", "GPL", "Not open source"],
     "conda_environment": "{{ cookiecutter.repo_name }}",
     "create_conda_environment": ["YES", "NO"],
     "python_version": ["2.7", "3.6"]
