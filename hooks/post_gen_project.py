@@ -13,7 +13,7 @@ def create_git_repo():
 def configure_git_remotes():
     print('Adding git remote named upstream under the {{ cookiecutter.github_user_name }} user')    
     subprocess.call(['git', 'remote', 'add', 'origin', user_repo])
-    print('Adding git remote named upstream under the FleetManagement Offline Organization')
+    print('Adding git remote named upstream under the JupyterdayATL Organization')
     subprocess.call(['git', 'remote', 'add', 'upstream', org_repo])
     print('\n Verify these remotes exist before pushing from your local repository \n')
 
