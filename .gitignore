@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Raw Data files
+data/*.csv
+
 # C extensions
 *.so
 
