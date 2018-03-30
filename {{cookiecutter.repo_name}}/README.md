@@ -35,9 +35,6 @@ Project Organization
     │
 
 
---------
-
-<p><small>Project based on the <a target="_blank" href="https://github.build.ge.com/FleetServicesOfflineAnalytics/sample_offline_template">cookiecutter data science project template</a>.</p>
 
 Set up
 ------------
@@ -47,12 +44,12 @@ Install the virtual environment with conda using the included environment.yml fi
 On Windows
 ```bash
 $ conda env create -f environment.yml
-$ activate {{cookiecutter.conda_environment}}
+$ activate {{ cookiecutter.project_name.lower().replace(' ', '_') }}_env
 ```
 On OSx/Linux
 ```bash
 $ conda env create -f environment.yml
-$ source activate {{cookiecutter.conda_environment}}
+$ source activate {{ cookiecutter.project_name.lower().replace(' ', '_') }}_env
 ```
 
 How to Execute This Project
