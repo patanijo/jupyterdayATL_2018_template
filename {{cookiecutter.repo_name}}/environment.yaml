@@ -1,4 +1,4 @@
-name: {{ cookiecutter.conda_environment }}
+name: {{ cookiecutter.project_name.lower().replace(' ', '_') }}_env
 dependencies:
   - python={{cookiecutter.python_version}}
   - jupyter
