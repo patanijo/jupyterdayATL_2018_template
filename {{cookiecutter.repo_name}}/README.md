@@ -43,16 +43,21 @@ Install the virtual environment with conda using the included environment.yml fi
 
 On Windows
 ```bash
-$ conda env create -f environment.yml
+$ conda env create -f environment.yaml
 $ activate {{ cookiecutter.project_name.lower().replace(' ', '_') }}_env
 ```
 On OSx/Linux
 ```bash
-$ conda env create -f environment.yml
+$ conda env create -f environment.yaml
 $ source activate {{ cookiecutter.project_name.lower().replace(' ', '_') }}_env
 ```
 
 How to Execute This Project
 -----------
 
-Include an example or two of how to run various cleaning or analysis tasks. This is often the first thing users and collaborators on your project will look at, so make it explicit. 
+Include an example or two of how to run various cleaning or analysis tasks. This is often the first thing users and collaborators on your project will look at, so make it explicit.
+
+
+How to Deploy This Project
+-----------
+ 
