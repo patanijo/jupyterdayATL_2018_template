@@ -1,5 +1,6 @@
 # Data Science Project Pull Request Checklist
-##
+
+## {{cookiecutter.project_name}}
 
 
 __Adapted From Jeff Leek Book "Elements of Analytic Style"__

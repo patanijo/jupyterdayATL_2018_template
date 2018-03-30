@@ -2,11 +2,11 @@
     "project_name": "project_name",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "author_name": "Your name (or your organization/company/team)",
-    "author_email": "{{cookiecutter.author_name.lower().replace(' ', '.')}}@ge.com",
-    "SSO": "Your Single Sign-On", 
+    "author_email": "",
+    "github_user_name": "Your Single Sign-On", 
     "description": "A short description of the project.",
-    "open_source_license": ["Not open source"],
+    "open_source_license": ['Apache', 'MIT', 'BSD-3', 'BSD-2', 'GPL', 'Not open source"],
     "conda_environment": "{{ cookiecutter.repo_name }}",
     "create_conda_environment": ["YES", "NO"],
-    "python_version": ["2.7", "3"]
+    "python_version": ["2.7", "3.6"]
 }
