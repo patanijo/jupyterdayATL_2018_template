@@ -2,7 +2,7 @@
 
 import subprocess
 
-user_repo = 'https://github.com/{{ cookiecutter.SSO }}/{{ cookiecutter.repo_name }}'
+user_repo = 'https://github.com/{{ cookiecutter.github_user_name}}/{{ cookiecutter.repo_name }}'
 org_repo = 'https://github.com/jupyterdayATL/FleetServicesOfflineAnalytics/{{ cookiecutter.repo_name }}'
 
 def create_git_repo():
@@ -11,7 +11,7 @@ def create_git_repo():
     subprocess.call(['git', 'commit', '-m', 'Initial Automated commit of {{cookiecutter.project_name}}'])
 
 def configure_git_remotes():
-    print('Adding git remote named upstream under the {{ cookiecutter.SSO }} user')    
+    print('Adding git remote named upstream under the {{ cookiecutter.github_user_name }} user')    
     subprocess.call(['git', 'remote', 'add', 'origin', user_repo])
     print('Adding git remote named upstream under the FleetManagement Offline Organization')
     subprocess.call(['git', 'remote', 'add', 'upstream', org_repo])

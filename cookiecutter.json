@@ -1,9 +1,9 @@
 {
     "project_name": "project_name",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "author_name": "Your name (or your organization/company/team)",
-    "author_email": "",
-    "github_user_name": "Your Single Sign-On", 
+    "author_name": "Analytic Developer Name",
+    "author_email": "Analytic Developer email address",
+    "github_user_name": "", 
     "description": "A short description of the project.",
     "open_source_license": ["Apache", "MIT", "BSD-3", "BSD-2", "GPL", "Not open source"],
     "conda_environment": "{{ cookiecutter.repo_name }}",
