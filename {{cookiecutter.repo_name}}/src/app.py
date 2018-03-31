@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import 
 
 from sklearn.metrics import log_loss
 from sklearn.externals import joblib
