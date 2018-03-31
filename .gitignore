@@ -6,6 +6,10 @@ __pycache__/
 # Raw Data files
 data/*.csv
 
+# Python and html files created by post-save hook
+{{cookiecutter.repo_name}}/deliver/*.html
+{{cookiecutter.repo_name}}/deliver/*.py
+
 # C extensions
 *.so
 

@@ -6,6 +6,9 @@ user_repo = 'https://github.com/{{ cookiecutter.github_user_name}}/{{ cookiecutt
 org_repo = 'https://github.com/jupyterdayATL/{{ cookiecutter.repo_name }}'
 
 def create_git_repo():
+    """
+    Initializes a new local git repository and commits files created from the template.
+    """
     subprocess.call(['git', 'init'])
     subprocess.call(['git', 'add', '.'])
     subprocess.call(['git', 'commit', '-m', 'Initial Automated commit of {{cookiecutter.project_name}}'])
