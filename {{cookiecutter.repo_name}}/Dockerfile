@@ -11,6 +11,6 @@ COPY src/app.py /
 RUN conda env create --file environment.yaml
 
 # Run the Analytic Web Service
-ENTRYPOINT ["/opt/conda/envs/{{ cookiecutter.project_name.lower().replace(' ', '_') }}_env/python","-m", "app"]
+ENTRYPOINT ["/opt/conda/envs/{{ cookiecutter.project_name.lower().replace(' ', '_') }}_env/bin/python","-m", "app"]
 EXPOSE 5000
 

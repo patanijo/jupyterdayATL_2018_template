@@ -17,6 +17,10 @@ def predict():
 def monitor():
   return {'Not Implemented'}
 
+@app.route('/hello', methods=['GET'])
+def hello():
+  return {'Hello World'}
+
 if __name__ == '__main__':
-  clf = joblib.load('_model.pkl')
+  clf = joblib.load('model.pkl')
   app.run(debug=False, host="0.0.0.0")
