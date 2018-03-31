@@ -60,4 +60,6 @@ Include an example or two of how to run various cleaning or analysis tasks. This
 
 How to Deploy This Project
 -----------
- 
+1. At the project top level run `conda env export -n {{ cookiecutter.project_name.lower().replace(' ', '_') }}_env --file environment.yaml`
+2. Ensure this file gets checked into source code.
+3. Run `docker build -t {{ cookiecutter.project_name.lower().replace(' ', '_') }}:latest . 

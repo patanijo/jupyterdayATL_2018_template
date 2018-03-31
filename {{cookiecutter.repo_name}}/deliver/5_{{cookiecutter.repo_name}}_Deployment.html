@@ -11787,8 +11787,11 @@ div#notebook {
 been identified to create the relevant model(s), this procedure is documented here for later deployment.</p>
 <h2 id="Deployment-steps">Deployment steps<a class="anchor-link" href="#Deployment-steps">&#182;</a></h2><ol>
 <li>Create a pull request to have your project development history merged into the organization Github repository.</li>
-<li>From your top level project directory, at a command line run the command `docker build -t <your organization>/{{ cookiecutter.project<em>name.lower().replace(' ', '</em>') }}.</li>
-<li>If the container builds sucessfully, run an instance of the container locally.</li>
+<li><p>From your top level project directory, at a command line run the command:</p>
+<p><code>docker build -t &lt;your organization&gt;/{{ cookiecutter.project_name.lower().replace(' ', '_') }}</code>.</p>
+</li>
+<li><p>If the container builds sucessfully, run an instance of the container locally.</p>
+</li>
 <li>Test that you can run the model locally.</li>
 <li>If you are satisfied that the model is giving as expected results, push the containerized image to your configured docker repository.</li>
 </ol>
@@ -11809,6 +11812,28 @@ been identified to create the relevant model(s), this procedure is documented he
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-1-99487d3eaa19&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">5</span>
+<span class="ansi-red-fg">    reply requests.get()</span>
+                 ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

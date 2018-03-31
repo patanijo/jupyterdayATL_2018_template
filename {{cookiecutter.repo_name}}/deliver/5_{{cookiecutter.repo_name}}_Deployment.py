@@ -18,7 +18,10 @@
 # ## Deployment steps
 # 
 # 1. Create a pull request to have your project development history merged into the organization Github repository.
-# 2. From your top level project directory, at a command line run the command `docker build -t <your organization>/{{ cookiecutter.project_name.lower().replace(' ', '_') }}.
+# 2. From your top level project directory, at a command line run the command: 
+# 
+#     `docker build -t <your organization>/{{ cookiecutter.project_name.lower().replace(' ', '_') }}`.
+#     
 # 3. If the container builds sucessfully, run an instance of the container locally.
 # 3. Test that you can run the model locally.
 # 4. If you are satisfied that the model is giving as expected results, push the containerized image to your configured docker repository.

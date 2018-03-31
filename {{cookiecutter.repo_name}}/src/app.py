@@ -1,23 +1,22 @@
-from flask import Flask, request, render_template
-import pickle
-import numpy as np
+from flask import Flask, request, jsonify
+import 
 
 from sklearn.metrics import log_loss
+from sklearn.externals import joblib
 
 app = Flask(__name__)
-from sklearn.externals import joblib
-model = joblib.load('logmodel.pkl')
 
-@app.route('/predict',methods=['GET'])
+@app.route('/predict',methods=['POST'])
 def predict():
-#  X =
-  answer = model.predict()
+  json_ = request.json
+  query = pd.DataFrame(json_).values
+  prediction = clf.predict(query)
+  return jsonify({'prediction': list(prediction)})
 
 @app.route('/monitor',methods=['GET'])
 def monitor():
-#  X = 
-#  y_true =
-#  y_pred = model.predict(X)
-    
+  return {'Not Implemented'}
+
 if __name__ == '__main__':
-	app.run(debug=False, host="0.0.0.0")
+  clf = joblib.load('_model.pkl')
+  app.run(debug=False, host="0.0.0.0")

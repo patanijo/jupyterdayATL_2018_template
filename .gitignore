@@ -6,6 +6,9 @@ __pycache__/
 # Raw Data files
 data/*.csv
 
+# Test model files
+models/*.pkl
+
 # Python and html files created by post-save hook
 {{cookiecutter.repo_name}}/deliver/*.html
 {{cookiecutter.repo_name}}/deliver/*.py

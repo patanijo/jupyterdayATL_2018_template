@@ -6,5 +6,5 @@
     "github_user_name": "", 
     "description": "A short description of the project.",
     "open_source_license": ["Apache", "MIT", "BSD-3", "BSD-2", "GPL", "Not open source"],
-    "python_version": ["2.7", "3.6"]
+    "python_version": ["3.6", "2.7"]
 }
