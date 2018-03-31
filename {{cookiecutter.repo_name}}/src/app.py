@@ -21,5 +21,5 @@ def hello():
   return {'Hello World'}
 
 if __name__ == '__main__':
-  clf = joblib.load('model.pkl')
+  clf = joblib.load('models/model.pkl')
   app.run(debug=False, host="0.0.0.0")
