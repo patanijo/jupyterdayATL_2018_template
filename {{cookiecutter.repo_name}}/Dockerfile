@@ -8,6 +8,7 @@ RUN mkdir models
 COPY environment.yaml /
 COPY models/*.pkl /models
 COPY src/app.py /
+RUN conda update conda -y
 RUN conda env create --file environment.yaml
 
 # Run the Analytic Web Service
