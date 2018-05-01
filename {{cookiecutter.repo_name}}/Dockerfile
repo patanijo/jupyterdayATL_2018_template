@@ -10,6 +10,7 @@ COPY models/*.pkl /models
 COPY src/app.py /
 RUN conda update conda -y
 RUN conda env create --file environment.yaml
+RUN conda clean --all --yes
 
 # Run the Analytic Web Service
 ENTRYPOINT ["/opt/conda/envs/{{ cookiecutter.project_name.lower().replace(' ', '_') }}_env/bin/python","-m", "app"]
